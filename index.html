@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            padding: 20% 20%;
+        }
+        table,tr,th,td{
+            border: 1px dotted red;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: none;
+            padding: 1em 2em 0 2em;
+        }
+        tr{
+            border-right:none ;
+            border-left: none;
+        }
+        table{
+            border: none;
+        }
+        tr:first-child{
+            border-top: none;
+        }
+        th:nth-child(4), td:nth-child(4){
+            border-right: 1px dotted blue;
+        }
+        tr:first-child th:nth-child(2){
+            border-right: 1px dotted blue; 
+        }
+        td:nth-child(2n){
+            background-color: yellow;
+        }
+        input{
+            margin-bottom: 2em;
+            padding: 1em;
+            
+        }
+        .width{
+            width: 25em;
+        }
+        .submit{
+            color: white;
+            background-color: blue;
+            margin: 0 0 0 12%;
+            border-color: white;
+        }
+        .submit:hover{
+            color: blue;
+            background-color: white;
+            border-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    
+    
+<!-- <table>
+	<tr style="border-bottom: none;">
+        <th style="border-bottom: none;">Days</th>
+		<th colspan="3">Science</th>
+		
+		<th colspan="3">Arts</th>
+       
+	</tr>
+    <tr style="border-top: 0px;">
+        <th style="border-top: 0px;"> </th>
+        <th>Subject</th>
+		<th>invigilator</th>
+		<th>time</th>
+		<th>Subject</th>
+		<th>invigilator</th>
+		<th>time</th>
+    </tr>
+	
+	<tr>
+        
+        <td></td>
+		<td>Jethro</td>
+		<td>Ebipade</td>
+		<td>Gloryana</td>
+		<td>Emmanuael</td>
+		<td>Student4</td>
+		<th>Student4</th>
+	</tr>
+	<tr>
+        <td></td>
+		<td>Jethro</td>
+		<td>Ebipade</td>
+		<td>Gloryana</td>
+		<td>Emmanuael</td>
+		<td>Student4</td>
+		<th>Student4</th>
+	</tr>
+</table> -->
+    <form>
+        <input class="width" name="name" type="text" placeholder="Your name">
+        <input class="width" name="email" type="email" placeholder="Your Email"><br>
+        <input class="width" name="password" type="password" placeholder="Your Password">
+        <p>Have you ridden a car before?</p>
+        <input class="radio" id="yes" type="radio" name="survey" value="yes">
+        <label for="yes">Yes</label>
+        <input class="radio" type="radio" id="no" name="survey" value="no">
+        <label for="no">No</label>
+        <p>Select all that apply</p>
+        <input class="carDriven" id="benz" type="checkbox" value="benz" name="vehicle1" >
+        <label for="benz">Benz</label>
+        <input class="carDriven" id="toyota" type="checkbox" value="toyota" name="vehicle2" >
+        <label for="toyota">Toyota</label>
+        <input class="carDriven" id="BMW" type="checkbox" value="BMW" name="vehicle3" >
+        <label for="BMW">BMW</label>
+        <input class="carDriven" id="volvo" type="checkbox" value="volvo" name="vehicle4" >
+        <label for="volvo">Volvo</label> <br>
+        <input class="submit" type="submit" value="register">
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
